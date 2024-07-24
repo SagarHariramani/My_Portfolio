@@ -1,0 +1,43 @@
+<div id="achivements" class="achivements-container">
+  <div class="circle"></div>
+
+  <div class="section-divider">
+    <div class="divider-line"></div>
+  </div>
+
+  <div class="section-header">
+    <div class="header-content">
+      <span class="header-line"></span>
+      <span class="header-title">Achivements</span>
+      <span class="header-line"></span>
+    </div>
+  </div>
+
+  <div class="achivements-content">
+    <div
+      *ngFor="let achivement of achivements"
+      class="achivement-card-container"
+    >
+      <div class="achivement-card">
+        <div class="achivement-card-title">{{ achivement.title }}</div>
+        <div class="achivement-card-header">
+          <div class="achivement-card-icon">
+            <img [src]="achivement.img" alt="achivement-icon"  />
+          </div>
+        </div>
+        <div class="achivement-card-content">
+          <div class="achivement-card-description">
+            <div class="blink">
+              <span class="keyword">const</span>
+              <span class="variable">description</span>
+              <span class="operator">=</span>
+              <span class="brace">&#123;</span>
+              <p class="string">'{{ achivement.description }}'</p>
+              <span class="brace"><span >   &#125;</span> ;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

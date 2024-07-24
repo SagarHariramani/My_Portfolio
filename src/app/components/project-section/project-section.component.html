@@ -1,0 +1,21 @@
+<div id="projects" class="projects-container">
+  <div class="sticky-header">
+    <div class="circle"></div>
+    <div class="header-content">
+      <span class="header-title">PROJECTS</span>
+      <span class="header-line"></span>
+    </div>
+  </div>
+
+  <div class="projects-content">
+    <div class="project-list">
+      <div *ngFor="let project of projectsData.slice(0, 5); let index = index"
+           [id]="'sticky-card-' + (index + 1)"
+           class="sticky-card">
+        <div class="project-card-container">
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

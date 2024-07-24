@@ -1,0 +1,131 @@
+.hero-code-container {
+    order: 1;
+    background: linear-gradient(to right, #0d1224, #0a0d37);
+    border: 1px solid #1b2c68a0;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .gradient-lines {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .line {
+    height: 1px;
+    width: 100%;
+  }
+  
+  .line:first-child {
+    background: linear-gradient(to right, transparent, #ff69b4, #ee82ee);
+  }
+  
+  .line:last-child {
+    background: linear-gradient(to right, #ee82ee, transparent);
+  }
+  
+  .code-header {
+    padding: 1rem 2rem;
+  }
+  
+  .color-dots {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+  }
+  .bg-red {
+    background-color: #F87171; 
+  }
+  .bg-orange {
+    background-color: #FB923C; 
+  }
+  .bg-green {
+    background-color: #BBF7D0; 
+  }
+  .code-content {
+    overflow: hidden;
+    border-top: 2px solid #4b0082;
+    padding: 1rem 2rem;
+  }
+  
+  .code-block {
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  
+  .blink {
+    display: inline;
+  }
+  
+  .keyword {
+    color: #ff69b4;
+  }
+  
+  .variable {
+    color: white;
+  }
+  
+  .operator {
+    color: #ff69b4;
+  }
+  
+  .bracket {
+    color: #d3d3d3;
+  }
+  
+  .indent1 {
+    margin-left: 2rem;
+  }
+  
+  .indent2 {
+    margin-left: 4rem;
+  }
+  
+  .indent3 {
+    margin-left: 6rem;
+  }
+  
+  .key {
+    color: white;
+  }
+  
+  .string {
+    color: #ffa500;
+  }
+  
+  .array {
+    color: #ffa500;
+  }
+  
+  .boolean {
+    color: #ffa500;
+  }
+  
+  .function {
+    color: #ffa500;
+  }
+  
+  .this {
+    color: #00ffff;
+  }
+  
+  .number {
+    color: #ffa500;
+  }
+  
+  
+  pre {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  

@@ -1,0 +1,125 @@
+<section class="hero-section">
+    <img src="/assets/hero.svg" alt="Hero" class="hero-image" />
+  
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Hello, <br />
+          This is <span class="highlight-pink">{{ personalData.name }}</span>,
+          I'm a Professional
+          <span class="highlight-green">{{ personalData.designation }}</span>.
+        </h1>
+  
+        <div class="hero-links">
+          <a href="{{ personalData.github }}" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="{{ personalData.linkedIn }}" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="{{ personalData.facebook }}" target="_blank" class="social-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="{{ personalData.leetcode }}" target="_blank" class="social-link">
+            <i class="fas fa-code"></i>
+          </a>
+          <a href="{{ personalData.twitter }}" target="_blank" class="social-link">
+            <i class="fab bi-twitter-x"></i>
+          </a>
+        </div>
+  
+        <div class="button-group">
+          <a href="#contact" class="contact-link">
+            <button class="contact-button">
+              <span>Contact me</span>
+              <i class="bi bi-person-lines-fill"></i>
+            </button>
+          </a>
+        
+          <a class="resume-link" role="button" target="_blank" href="{{personalData.resume}}">
+            <span>Get Resume</span>
+            <i class="bi bi-download"></i>
+          </a>
+        </div>
+      </div>        
+  
+      <div class="hero-code-container">
+        <div class="gradient-lines">
+          <div class="line from-transparent via-pink-500 to-violet-600"></div>
+          <div class="line from-violet-600 to-transparent"></div>
+        </div>
+        <div class="code-header">
+          <div class="color-dots">
+            <div class="dot bg-red"></div>
+            <div class="dot bg-orange"></div>
+            <div class="dot bg-green"></div>
+          </div>
+        </div>
+        <div class="code-content">
+          <code class="code-block">
+            <div class="blink">
+              <span class="keyword">const</span>
+              <span class="variable"> coder</span>
+              <span class="operator">=</span>
+              <span class="bracket">&#123;</span>
+            </div>
+            <div>
+              <span class="indent1 key">name:</span>
+              <span class="string">'{{personalData.name}}'</span>
+            </div>
+            <div class="indent1">
+              <span class="key">skills:</span>
+              <span class="bracket">[</span>
+              <span class="array">'Python', 'Angular', '.Net', 'HTML', 'CSS', 'JavaScript', 'TypeScript', 'C#', 'MYSQL','Power BI','Git'</span>
+              <span class="bracket">]</span>
+              <span class="comma">,</span>
+            </div>
+            <div>
+              <span class="indent1 key">hardWorker:</span>
+              <span class="boolean">true</span>
+              <span class="comma">,</span>
+            </div>
+            <div>
+              <span class="indent1 key">quickLearner:</span>
+              <span class="boolean">true</span>
+              <span class="comma">,</span>
+            </div>
+            <div>
+              <span class="indent1 key">problemSolver:</span>
+              <span class="boolean">true</span>
+              <span class="comma">,</span>
+            </div>
+            <div>
+              <span class="indent1 key">hireable:</span>
+              <span class="function">function</span>
+              <span class="bracket">&#123;</span>
+            </div>
+            <div>
+              <span class="indent2 keyword">return</span>
+              <span class="bracket">(</span>
+            </div>
+            <div>
+              <span class="indent3 this">this.</span>
+              <span class="variable">hardWorker </span>
+              <span class="operator">&amp;&amp;</span>
+            </div>
+            <div>
+              <span class="indent3 this">this.</span>
+              <span class="variable">problemSolver </span>
+              <span class="operator">&amp;&amp;</span>
+            </div>
+            <div>
+              <span class="indent3 this">this.</span>
+              <span class="variable">skills.length </span>
+              <span class="operator">&gt;=</span>
+              <span class="number">5</span>
+            </div>
+            <div><span class="indent2 bracket">);</span></div>
+            <div><span class="indent1 bracket">&#125;</span></div>
+            <div><span class="bracket">&#125;</span></div>
+          </code>
+        </div>
+      </div>
+    </div>
+  </section>
+  
