@@ -1,0 +1,36 @@
+<div id="contact" class="contact-section">
+  <div class="contact-label-container">
+    <span class="contact-label">CONTACT</span>
+    <span class="vertical-line"></span>
+  </div>
+
+  <div class="contact-content">
+    <div class="contact-info">
+      <div class="contact-info-list">
+        <div class="contact-info-item">
+          <i class="icon-container bi-envelope-at-fill"></i>
+          <span>{{ personalData.email }}</span>
+        </div>
+        <div class="contact-info-item">
+          <i class="icon-container bi-telephone-fill"></i>
+          <span>{{ personalData.phone }}</span>
+        </div>
+        <div class="contact-info-item">
+          <i class="icon-container bi-geo-alt-fill"></i>
+          <span>{{ personalData.address }}</span>
+        </div>
+      </div>
+      <div class="social-links">
+        <a target="_blank" [href]="personalData.github">
+          <i class="icon-container bi-github"></i>
+        </a>
+        <a target="_blank" [href]="personalData.linkedIn">
+          <i class="icon-container bi-linkedin"></i>
+        </a>
+        <a target="_blank" [href]="personalData.facebook">
+          <i class="icon-container bi-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

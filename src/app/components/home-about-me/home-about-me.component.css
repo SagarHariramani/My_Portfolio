@@ -1,0 +1,285 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: -98px;
+    z-index:0;
+    width: 100%;
+  }
+  
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    z-index:2;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    order: 2;
+  }
+  
+  .hero-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: white;
+  }
+  
+  .highlight-pink {
+    color: #ff69b4;
+  }
+  
+  .highlight-green {
+    color: #16f2b3;
+  }
+  
+  .hero-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-link {
+    color: #ff69b4;
+    font-size: 2rem;
+    transition: transform 0.3s;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.25);
+  }
+  
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .button-group {
+    margin-top:2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+  }
+  
+  .contact-link {
+    display: inline-block;
+    background: linear-gradient(to right, #d946ef, #7c3aed); 
+    padding: 1px;
+    border-radius: 9999px; 
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    background: linear-gradient(to right, #d946ef, #7c3aed);
+  }
+  
+  .contact-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #0d1224; 
+    border-radius: 9999px; 
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em; 
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; 
+    transition: all 0.2s ease-out;
+
+  }
+  
+  .resume-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; 
+    background: linear-gradient(to right, #d946ef, #7c3aed); 
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1rem; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 0.1em; 
+    color: #fff;
+    border-radius: 9999px; 
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+  }
+  
+  .resume-link:hover,.contact-button:hover {
+    gap: 1rem; 
+  }
+  
+  
+  .hero-code-container {
+    order: 1;
+    background: linear-gradient(to right, #0d1224, #0a0d37);
+    border: 1px solid #1b2c68a0;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .gradient-lines {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .line {
+    height: 1px;
+    width: 100%;
+  }
+  
+  .line:first-child {
+    background: linear-gradient(to right, transparent, #ff69b4, #ee82ee);
+  }
+  
+  .line:last-child {
+    background: linear-gradient(to right, #ee82ee, transparent);
+  }
+  
+  .code-header {
+    padding: 1rem 2rem;
+  }
+  
+  .color-dots {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+  }
+  .bg-red {
+    background-color: #F87171; 
+  }
+  .bg-orange {
+    background-color: #FB923C; 
+  }
+  .bg-green {
+    background-color: #BBF7D0; 
+  }
+  .code-content {
+    overflow: hidden;
+    border-top: 2px solid #4b0082;
+    padding: 1rem 2rem;
+  }
+  
+  .code-block {
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  
+  .blink {
+    display: inline;
+  }
+  
+  .keyword {
+    color: #ff69b4;
+  }
+  
+  .variable {
+    color: white;
+  }
+  
+  .operator {
+    color: #ff69b4;
+  }
+  
+  .bracket,.comma {
+    color: #d3d3d3;
+  }
+  
+  .indent1 {
+    margin-left: 2rem;
+  }
+  
+  .indent2 {
+    margin-left: 4rem;
+  }
+  
+  .indent3 {
+    margin-left: 6rem;
+  }
+  
+  .key {
+    color: white;
+  }
+  
+  .string {
+    color: #FCD34D;
+  }
+  
+  .array {
+    color: #FCD34D;
+  }
+  
+  .boolean {
+    color: #FB923C;
+  }
+  
+  .function {
+    color: #FB923C;
+  }
+  
+  .this {
+    color: #00ffff;
+  }
+  
+  .number {
+    color: #FCD34D;
+  }
+  
+  
+  pre {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  @media (min-width:768px) {
+    .hero-title{
+      font-weight: 800;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .hero-title{
+      font-size: 2.6rem;
+      line-height: 3.5rem; 
+    }
+    .hero-text {
+      order: 1;
+    }
+  
+    .hero-code {
+      order: 2;
+    }
+  }
+
+  

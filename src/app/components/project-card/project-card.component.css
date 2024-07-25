@@ -1,0 +1,128 @@
+.project-card {
+  background: linear-gradient(to right, #0a0d37, #0d1224);
+  border: 1px solid rgba(27, 44, 104, 0.6);
+  border-radius: 0.375rem;
+  width: 100%;
+  position: relative;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.header-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-line {
+  height: 1px;
+  flex: 1;
+}
+
+.header-line:first-child {
+  background: linear-gradient(to right, transparent, pink, violet);
+}
+
+.header-line:last-child {
+  background: linear-gradient(to right, violet, transparent);
+}
+
+.project-name-container {
+  padding: 16px 32px;
+  position: relative;
+  /* border-bottom: 2px solid #4b0082; */
+
+}
+
+.status-dots {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #F87171; 
+}
+
+.orange {
+  background-color: #FB923C; 
+}
+
+.green {
+  background-color: #BBF7D0; 
+}
+
+.project-name {
+  text-align: center;
+  color: #16f2b3;
+  font-size: 1.25rem;
+  margin: 0px;
+}
+
+.project-details {
+  padding: 16px 32px;
+  /* border-top: 2px solid #4b0082; */
+  overflow: hidden;
+
+  
+}
+
+.project-code {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.blink {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.keyword {
+  color:#ff69b4;
+  margin-right: 8px;
+}
+
+.variable {
+  color: white;
+  margin-right: 8px;
+}
+
+.operator {
+  color: pink;
+  margin-right: 8px;
+}
+
+.brace {
+  color: gray;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.key {
+  color: white;
+}
+
+.string {
+  color: #ffbf00;
+}
+
+.role {
+  color: orange;
+}
+
+.description {
+  color: #00ffff;
+}
+.margin{
+  margin-left:20px
+}

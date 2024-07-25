@@ -1,0 +1,45 @@
+<div class="project-card">
+  <div class="header-bar">
+    <div class="header-line"></div>
+    <div class="header-line"></div>
+  </div>
+  <div class="project-name-container">
+    <div class="status-dots">
+      <div class="dot red"></div>
+      <div class="dot orange"></div>
+      <div class="dot green"></div>
+    </div>
+    <p class="project-name">{{ project.name }}</p>
+  </div>
+  <div class="project-details">
+    <code class="project-code">
+      <div class="blink">
+        <span class="keyword">const</span>
+        <span class="variable">project</span>
+        <span class="operator">=</span>
+        <span class="brace">&#123;</span>
+      </div>
+      <div>
+        <span class="indent key">name:</span>
+        <span class="string">'{{ project.name }}',</span>
+      </div>
+      <div class="margin">
+        <span class="key">tools:</span>
+        <span class="brace">[</span>
+        <span *ngFor="let tool of project.tools; let last = last">
+          <span class="string">'{{ tool }}'</span><span *ngIf="!last">, </span>
+        </span>
+        <span class="brace">],</span>
+      </div>
+      <div>
+        <span class="indent key">myRole:</span>
+        <span class="role">{{ project.role }}</span>,
+      </div>
+      <div class="margin">
+        <span class="key">Description:</span>
+        <span class="description">{{ project.description }}</span>
+      </div>
+      <div class="brace"><span >&#125;</span>;</div>
+    </code>
+  </div>
+</div>

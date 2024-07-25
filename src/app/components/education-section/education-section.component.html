@@ -1,0 +1,48 @@
+<div id="education" class="education-section">
+  <img src="/assets/section.svg" alt="Hero" class="section-image"/>
+
+  <div class="section-header">
+    <div class="header-content">
+      <span class="header-line"></span>
+      <span class="header-title">Education</span>
+      <span class="header-line"></span>
+    </div>
+  </div>
+
+  <div class="education-content">
+    <div class="education-grid">
+      <div class="animation-container">
+        <div class="animation-wrapper">
+          <app-lottie-animation [animationPath]="animationPath"></app-lottie-animation>
+        </div>
+      </div>
+
+      <div>
+        <div class="education-list">
+          <div *ngFor="let education of educationData" class="glow-card" [attr.id]="'education-' + education.id">
+            <div class="card-content">
+              <img
+                src="/assets/blur-23.svg"
+                alt="Hero"
+                class="card-bg"
+              />
+              <div class="card-header">
+                <p class="duration-text">{{ education.duration }}</p>
+              </div>
+              <div class="card-body">
+                <div class="icon-wrapper">
+                  <i class="bi bi-person-workspace"></i>
+                </div>
+                <div>
+                  <p class="education-title">{{ education.title }}</p>
+                  <p class="institution-name">{{ education.institution }}</p>
+                  <p class="grade">{{education.grade}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
