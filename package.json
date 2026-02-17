@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/My_Portfolio/ --repo=https://github.com/SagarHariramani/My_Portfolio.git"
   },
   "scarfSettings": {
     "enabled": false

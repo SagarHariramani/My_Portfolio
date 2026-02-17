@@ -3,13 +3,18 @@
       <div class="logo">
         <a href="/">Sagar Hariramani</a>
       </div>
-      <ul class="nav-links">
-        <li><a href="/#about">ABOUT</a></li>
-        <li><a href="/#experience">EXPERIENCE</a></li>
-        <li><a href="/#skills">SKILLS</a></li>
-        <li><a href="/#education">EDUCATION</a></li>
-        <li><a href="/blog">BLOGS</a></li>
-        <li><a href="/#projects">PROJECTS</a></li>
+      <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul [ngClass]="{'nav-links': true, 'nav-links-active': isMenuOpen}">
+        <li><a href="/#about"(click)="closeMenu()">ABOUT</a></li>
+        <li><a href="/#experience"(click)="closeMenu()">EXPERIENCE</a></li>
+        <li><a href="/#skills"(click)="closeMenu()">SKILLS</a></li>
+        <li><a href="/#education"(click)="closeMenu()">EDUCATION</a></li>
+        <li><a href="/#projects"(click)="closeMenu()">PROJECTS</a></li>
+        <li><a href="/#achivements"(click)="closeMenu()">ACHIVEMENTS</a></li>
       </ul>
     </div>
   </div>

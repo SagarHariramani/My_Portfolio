@@ -14,7 +14,7 @@ export class ExperienceSectionComponent {
   animationPath:any;
   experiences: any;
   constructor(private employeementServiceData:EmployeementDataService) {
-    this.animationPath='/assets/lottie/code.json';
+    this.animationPath='assets/lottie/code.json';
   }
   ngOnInit() {
     this.experiences = this.employeementServiceData.employeementData;

@@ -14,7 +14,7 @@ export class EducationSectionComponent {
   animationPath:any;
   educationData:any;
   constructor(private educationDataService:EducationDataService) {
-    this.animationPath = "/assets/lottie/study.json";
+    this.animationPath = "assets/lottie/study.json";
   }
   ngOnInit() {
     this.educationData = this.educationDataService.educations;
